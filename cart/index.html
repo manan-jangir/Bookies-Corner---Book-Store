@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Bookies Corner</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="loadCart()">
+
+    <h2>Your Shopping Cart</h2>
+
+    <div id="cartContainer">
+        <table>
+            <thead>
+                <tr>
+                    <th>Book Title</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody id="cartTableBody">
+                </tbody>
+            <tfoot>
+                <tr class="total-row">
+                    <td colspan="3" style="text-align: right;">Grand Total:</td>
+                    <td id="grandTotal">$0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <button class="btn-pay" onclick="window.location.href='./pay_gate/payment_gateway.html'">Proceed to Payment</button>
+
+        <button class="btn-clear" onclick="clearCart()">Clear Cart</button>
+    </div>
+
+</body>
+</html>

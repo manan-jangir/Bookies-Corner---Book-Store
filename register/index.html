@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <style>
+        body { font-family: sans-serif; background-color: #fff; padding: 20px; }
+        .container { max-width: 500px; margin: 0 auto; border: 1px solid #ddd; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h2 { text-align: center; color: #8e44ad; }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        input[type="text"], input[type="email"], input[type="password"], textarea { width: 100%; padding: 8px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        .btn-register { width: 100%; padding: 12px; background-color: #8e44ad; color: white; border: none; margin-top: 20px; font-size: 16px; cursor: pointer; border-radius: 4px; }
+        .btn-register:hover { background-color: #732d91; }
+    </style>
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>New User Registration</h2>
+        <form name="regForm" actions="../login/index.html" onsubmit="return validateForm()" method="get">
+            <label>First Name: </label>
+            <input type="text" name="fname" required>
+            
+            <label>Last Name:</label>
+            <input type="text" name="lname" required>
+
+            <label>Email Address:</label>
+            <input type="email" name="email" required>
+
+            <label>Address:</label>
+            <textarea name="address" rows="3"></textarea>
+            
+            <label>Mobile Number</label>
+            <input type="text" name="mobile" maxlength="10">
+
+            <label>Username:</label>
+            <input type="text" name="username" required>
+
+            <label>Password:</label>
+            <input type="password" name="password" required>
+
+            <label>Confirm Password:</label>
+            <input type="password" name="confirm_password" required>
+
+            <button type="submit" class="btn-register">Register Now</button>
+        </form>
+    </div>
+</body>
+</html>

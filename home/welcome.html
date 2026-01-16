@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+    <link rel="stylesheet" type="text/css" href="wel_style.css">
+    <script src="../catalogue/book_data.js"></script>
+</head>
+<body onload="renderBooks('welcome-container', 'random')">
+
+    <h2>Top 5 Random Picks for You</h2>
+<p>
+    Refresh the list to see different recommendations! 
+    <button class="btn-refresh" onclick="renderBooks('welcome-container', 'random')">
+        ↻ Refresh List
+    </button>
+</p><br>
+
+    <div id="welcome-container" class="book-container">
+        </div>
+
+    <button class="btn-show-more" onclick="window.location.href='../catalogue/index.html'">
+        View Full Catalogue ➜
+    </button>
+</body>
+</html>
